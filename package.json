@@ -1,0 +1,19 @@
+{
+  "name": "nest-under-the-hood",
+  "version": "1.0.0",
+  "description": "NestJS dependency injection rebuilt from scratch in plain TypeScript, to understand modules, providers, exports and dynamic modules under the hood.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "test": "npm run test:framework && npm run test:scoreboard",
+    "test:framework": "tsx src/framework/module-scope.test.ts",
+    "test:scoreboard": "tsx src/modules/scoreboard/scoreboard.test.ts",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
